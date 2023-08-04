@@ -54,8 +54,8 @@ public class Brad13 extends HttpServlet {
 		ServletOutputStream out=  response.getOutputStream();
 		ImageIO.write(img, "jpeg", out);
 		
-		FileOutputStream fout = new FileOutputStream();
-		ImageIO.write(img, "jpeg", fout);
+//		FileOutputStream fout = new FileOutputStream();
+//		ImageIO.write(img, "jpeg", fout);
 		
 		
 		response.flushBuffer();

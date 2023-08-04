@@ -25,6 +25,15 @@
 		<%= lottery %>等於int lottery = (int)(Math.random()*49+1);
 		out.println(lottery);
 		
+		<hr/>
+		<%
+			String test = "hi";
+			out.print(test);
+		%>
+		
+		<br/>
+		<%= test %>
+		
 	</body>
 
 </html>

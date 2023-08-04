@@ -2,7 +2,7 @@ package tw.brad.apis;
 
 public class Member  {
 	private int id;
-	private  String account,realname,birthday;
+	private  String account,realName,birthday;
 	private boolean isMale;
 	
 	
@@ -19,7 +19,7 @@ public class Member  {
 			String realname,String birthday) {
 		this.id= id;
 		this.account = account;
-		this.realname = realname;
+		this.realName = realname;
 		this.birthday = birthday;
 		
 
@@ -39,10 +39,10 @@ public class Member  {
 		this.account = account;
 	}
 	public String getRealname() {
-		return realname;
+		return realName;
 	}
-	public void setRealname(String realname) {
-		this.realname = realname;
+	public void setRealname(String realName) {
+		this.realName = realName;
 	}
 	public String getBirthday() {
 		return birthday;
@@ -50,7 +50,9 @@ public class Member  {
 	public void setBirthday(String birthday) {
 		this.birthday = birthday;
 	}
-	
-	
+	@Override
+	public String toString() {
+		return String.format("%s:%s", account, realName);
+	}
 	
 }

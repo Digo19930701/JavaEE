@@ -29,7 +29,7 @@ public class Brad14 extends HttpServlet {
 		out.println("<h1>Brad</h1>");
 		out.println("<hr/>");
 		dis.include(request, response);
-		out.println("<hr/>");
+		out.println("<hr/>"); 
 		out.println("Copyleft...");
 		
 	}
