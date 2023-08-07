@@ -6,6 +6,8 @@ import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
 
+import javax.print.DocFlavor.STRING;
+
 public class BradUtils {
 	public static String loadView(String view) throws Exception {
 		String viewFile = 
@@ -71,4 +73,16 @@ public class BradUtils {
 		return (int)(Math.random()*101)+"";
 	}
 	
+	public static int prevPage(String page) {
+		int p = Integer.parseInt(page);
+		if(p >1)p--;
+		return p;
+		
+	}
+	public static int nextPage(String page,String pages) {
+		int ps = (int)Double.parseDouble(pages);
+		int p =Integer.parseInt(page);
+		if(p < ps)p++;
+		return p;
+	}
 }
